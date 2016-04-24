@@ -12,11 +12,7 @@ namespace SharpShapes
         {
             return Height*Height;
         }
-        //public int calculateArea(int aSquare)
-        //{
-        //    int AreaSquare = aSquare*aSquare;
-        //    return AreaSquare;
-        //}
+        //Constructor
         public Square(int height)
         {
             Height = height;

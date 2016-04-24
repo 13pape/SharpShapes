@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace SharpShapes
 {
-    public class Rhombus
+    public class Rhombus: Shape
     {
-        public int GetArea(int pDiagonal, int qDiagonal)
+        public override double calculateArea()
         {
-            int AreaRhombus = (pDiagonal*qDiagonal)/2;
-            return AreaRhombus;
+            return (Height * Width)/2;
+        }
+        //Constructor
+        public Rhombus(int height, int width)
+        {
+            Height = height;
+            Width = width;
         }
     }
 }

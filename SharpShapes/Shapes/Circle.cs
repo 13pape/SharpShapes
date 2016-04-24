@@ -14,14 +14,7 @@ namespace SharpShapes
         {
             return Math.PI * Radius * Radius;
         }
-
-        //A=3.141516*r*r
-        public double AreaCircle(int r)
-        {
-            double AreaCircle = Math.PI * r * r;
-            return AreaCircle;
-        }
-
+        //Constructor
         public Circle(int radius)
         {
             Radius = radius;

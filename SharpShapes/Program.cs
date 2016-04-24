@@ -34,20 +34,19 @@ namespace SharpShapes
                     int Height = Convert.ToInt32(Console.ReadLine());
                     shape = new Square(Height);
                     break;
-                //case "Rhombus":
-                //    //Console.WriteLine("Rhombus");
-                //    Console.WriteLine("Diagonal p Number = ");
-                //    int pDiagonal = Convert.ToInt32(Console.ReadLine());
-                //    Console.WriteLine("Diagonal q Number = ");
-                //    int qDiagonal = Convert.ToInt32(Console.ReadLine());
-                //    break;
-                //case "Cube":
-                //    //Console.WriteLine("Cube");
-                //    Console.WriteLine("Side Cube = ");
-                //    int aCube = Convert.ToInt32(Console.ReadLine());
-                //    break;
+                case "Rhombus":
+                    Console.WriteLine("Diagonal p Number = ");
+                    int HeightRhombus = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Diagonal q Number = ");
+                    int WidthRhombus = Convert.ToInt32(Console.ReadLine());
+                    shape = new Rhombus(HeightRhombus, WidthRhombus);
+                    break;
+                case "Cube":
+                    Console.WriteLine("Side Cube = ");
+                    int HeightCube = Convert.ToInt32(Console.ReadLine());
+                    shape = new Cube(HeightCube);
+                    break;
                 case "Cylinder":
-                    //Console.WriteLine("Cylinder");
                     Console.WriteLine("Radius Number = ");
                     int radius = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Height Number = ");

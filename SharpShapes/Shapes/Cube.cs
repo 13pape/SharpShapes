@@ -12,11 +12,14 @@ namespace SharpShapes
         {
             get { return 6; }
         }
-
-        public int GetArea(int aCube)
+        public override double calculateArea()
         {
-            int AreaCube = 6 *( aCube * aCube);
-            return AreaCube;
+            return 6 * (Height * Height);
+        }
+        //constructor
+        public Cube(int height)
+        {
+            Height = height;
         }
     }
 }
